@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/black">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="480px"
+                android:layout_height="623px"
+                android:src="@mipmap/ic_launcher" />
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginLeft="10dp"
+                android:layout_width="185dp"
+                android:layout_height="48sp"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="title"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="185dp"
+                android:layout_height="48sp"
+                android:layout_below="@+id/tv_name"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="date"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_href"
+                android:layout_marginLeft="15dp"
+                android:layout_width="185dp"
+                android:layout_height="48sp"
+                android:layout_gravity="center"
+                android:autoSizeTextType="uniform"
+                android:text="this is message"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/tv_date"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_marginLeft="15dp"
+                android:layout_width="185dp"
+                android:layout_height="48sp"
+                android:layout_gravity="center"
+                android:autoSizeTextType="uniform"
+                android:text="this is message"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/tv_href"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_marginLeft="15dp"
+                android:layout_width="185dp"
+                android:layout_height="48sp"
+                android:layout_gravity="center"
+                android:autoSizeTextType="uniform"
+                android:text="this is message"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/tv_notice"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
